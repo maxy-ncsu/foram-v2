@@ -1,0 +1,8 @@
+Numpy
+opencv-python
+serial
+Pillow
+scikit-image
+camera
+pyserial
+
