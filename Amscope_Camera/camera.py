@@ -18,7 +18,6 @@
 # ============= standard library imports ========================
 import ctypes
 import os
-import pdb
 
 from PIL import Image
 from numpy import zeros, uint8, uint32

@@ -15,8 +15,8 @@ from functions import *
 
 # Create folder to store images
 folder = "images\\" + datetime.today().strftime("%m-%d-%Y")
-if not os.path.isdir('images'):
-    os.mkdir('images')
+if not os.path.isdir('../images'):
+    os.mkdir('../images')
 if not os.path.isdir(folder):
     os.mkdir(folder)
     

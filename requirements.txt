@@ -3,6 +3,9 @@ opencv-python
 serial
 Pillow
 scikit-image
-camera
 pyserial
-
+camera
+matplotlib
+PyQt5
+PyQt5-tools
+imutils
