@@ -14,24 +14,24 @@
 # limitations under the License.
 # ===============================================================================
 import time
+import numpy as np
+import cv2
+import matplotlib.pyplot as plt
 
-from camera import ToupCamCamera
+from Amscope_Camera.camera import *
 
 cam = ToupCamCamera()
 cam.open()
-
-# wait for camera to startup
 time.sleep(2)
 
-# capture n images
-n = 10
-# every t seconds
-t = 2
+img = np.array(cam.get_pil_image())
+img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
 
-for i in range(n):
-    path = 'test_image-{:02d}.jpg'.format(i)
-    cam.save(path)
-    time.sleep(t)
+plt.imshow(img)
+plt.show()
 
+# for saving images
+path = 'images/cam_test_1/test_image-{:02d}.jpg'.format(1)
+cam.save(path)
+time.sleep(2)
 
-# ============= EOF =============================================
